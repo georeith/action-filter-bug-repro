@@ -1,0 +1,13 @@
+name: Test Push
+on:
+  push:
+    branches:
+      - '**'
+    paths:
+      - 'a'
+
+jobs:
+  testPush:
+    uses: ./.github/workflows/test.yml
+    name: Test
+
